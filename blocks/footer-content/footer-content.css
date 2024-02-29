@@ -1,0 +1,37 @@
+.footer-content-wrapper {
+    padding: 25px;
+    background: #0d2ea0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.footer-content h6 {
+    color: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer-content h4 {
+    color: #84aef1;
+    font-size: 18px;
+    font-family: Catamaran, sans-serif;
+    font-weight: 400;
+}
+
+.footer-content ul {
+    margin-top: 10px;
+}
+
+.footer-content li {
+    list-style-type: none;
+    margin-top: 5px;
+    color: #f5f6f8;
+    font-weight: 400;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    font-size: 14px;
+}
