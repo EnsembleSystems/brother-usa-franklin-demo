@@ -1,0 +1,19 @@
+.footer-global-wrapper {
+    background-color: #020920;
+    text-align: center;
+    padding: 25px 0;
+    color: #fff
+}
+
+.footer-global-wrapper ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-global-wrapper li {
+    list-style-type: none;
+}
+
+.footer-global-wrapper p {
+    padding-top: 25px;
+}
