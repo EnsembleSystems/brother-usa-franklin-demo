@@ -1,3 +1,3 @@
 Test URLs:
-- Before: https://main--{repo}--{owner}.hlx.live/
-- After: https://<branch>--{repo}--{owner}.hlx.live/
+- Before: https://main--brother-usa-franklin-demo--ensemblesystems.hlx.page/
+- After: https://<branch>te--brother-usa-franklin-demo--ensemblesystems.hlx.page/

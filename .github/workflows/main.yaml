@@ -12,3 +12,22 @@ jobs:
         node-version: 20
     - run: npm ci
     - run: npm run lint
+  comment-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Comment PR with Branch Name
+      uses: actions/github-script@v5
+      with:
+        script: |
+          const branchName = process.env.GITHUB_HEAD_REF;
+          const message = `This PR is opened from branch: \`${branchName}\``;
+          github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: message
+          })
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
