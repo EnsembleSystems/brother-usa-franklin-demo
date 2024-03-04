@@ -1,6 +1,5 @@
 .footer-content-wrapper {
     padding: 25px;
-    background: #0d2ea0;
 }
 
 .footer-content {
@@ -11,7 +10,7 @@
 
 .footer-content h6 {
     color: #fff;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
 }
@@ -32,6 +31,6 @@
     margin-top: 5px;
     color: #f5f6f8;
     font-weight: 400;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
