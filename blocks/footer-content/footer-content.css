@@ -11,16 +11,14 @@
 
 .footer-content h6 {
     color: #fff;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-family: 'Helvetica';
     font-size: 16px;
 }
 
 .footer-content h4 {
     color: #84aef1;
     font-size: 18px;
-    font-family: Catamaran, sans-serif;
-    font-weight: 400;
+    font-family: 'Catamaran';
 }
 
 .footer-content ul {
@@ -31,7 +29,6 @@
     list-style-type: none;
     margin-top: 5px;
     color: #f5f6f8;
-    font-weight: 400;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica';
     font-size: 14px;
 }
