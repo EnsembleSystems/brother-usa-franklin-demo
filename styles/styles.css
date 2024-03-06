@@ -1,10 +1,15 @@
 
 :root {
   /* colors */
-  --background-color: white;
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --white: #fff;
+  --grey-shade: #f5f6f8;
+  --light-blue: #0d2ea0;
+  --dark-blue: #020920;
+  --sky-blue: #84aef1;
+  --stay-connected-subscribe: #248000;
 
   /* nav height */
   --nav-height: 64px;
@@ -27,7 +32,7 @@ body {
   margin: 0;
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: var(--white);
   display: none;
 }
 

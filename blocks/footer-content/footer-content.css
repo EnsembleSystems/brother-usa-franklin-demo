@@ -8,18 +8,18 @@
 .footer-content {
     display: flex;
     justify-content: space-around;
-    color: #fff;
+    color: var(--white);
 }
 
 .footer-content h6 {
-    color: #fff;
+    color: var(--white);
     font-family: 'Helvetica';
     font-size: 16px;
     margin-bottom: 5%
 }
 
 .footer-content h4 {
-    color: #84aef1;
+    color: var(--sky-blue);
     font-size: 18px;
     font-family: 'Catamaran';
 }
@@ -32,7 +32,7 @@
 .footer-content li {
     list-style-type: none;
     margin-top: 5px;
-    color: #f5f6f8;
+    color: var(--grey-shade);
     font-family: 'Helvetica';
     font-size: 14px;
 }

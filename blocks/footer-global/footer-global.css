@@ -1,8 +1,8 @@
 .footer-global-wrapper {
-    background-color: #020920;
+    background-color: var(--dark-blue);
     text-align: center;
     padding: 25px 0;
-    color: #fff;
+    color: var(--white);
 }
 
 .footer-global-wrapper ul {
