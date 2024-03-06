@@ -1,11 +1,16 @@
-.stay-connected-container {
+.stay-connected-wrapper {
+    margin-top: 20%;
+    padding: 1.5%;
+}
+
+.stay-connected {
     background: #f5f6f8;
     margin-right: auto;
     margin-left: auto;
     width: 74%;
     height: 115px;
-    padding: 25px 0 23px 0;
-
+    padding: 2% 1% 1%;
+    margin-top: -10%;
 }
 
 .stay-connected-container h6 {
@@ -19,7 +24,7 @@
     height: 55px;
     padding-left: 15px;
     padding-right: 15px;
-    width: 72%;
+    width: 42%;
     box-sizing: border-box;
     font-family: Helvetica;
 }
@@ -38,11 +43,6 @@
     font-family: 'Helvetica';
     width: 20%;
     margin-left: -3px;
-}
-
-.stay-connected-wrapper {
-    width: 67%;
-    padding: 1.5%;
 }
 
 .email-form {

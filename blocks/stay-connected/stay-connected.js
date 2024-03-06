@@ -18,6 +18,10 @@ export default function decorate(block) {
     form.appendChild(emailInput);
     form.appendChild(submitButton);
 
+    const styleDiv = document.createElement('div');
+    styleDiv.classList.add('style-div');
+
     block.appendChild(form);
+    block.prepend(styleDiv);
 
 }
