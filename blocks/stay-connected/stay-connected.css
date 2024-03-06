@@ -13,6 +13,11 @@
     margin-top: -7%;
 }
 
+.stay-connected-container {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
 .stay-connected-container h6 {
     color: var(--light-blue);
     font-size: 18px;

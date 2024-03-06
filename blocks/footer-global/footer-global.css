@@ -5,6 +5,10 @@
     color: var(--white);
 }
 
+.footer-global-wrapper {
+    padding-left: 2%;
+}
+
 .footer-global-wrapper ul {
     display: flex;
     justify-content: space-around;

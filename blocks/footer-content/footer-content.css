@@ -4,6 +4,9 @@
     margin-right: 10%;
 }
 
+.footer-content-container {
+    padding-left: 3%;
+}
 
 .footer-content {
     display: flex;
