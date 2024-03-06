@@ -1,10 +1,11 @@
 .stay-connected-container {
     background: #f5f6f8;
-    margin: 0;
-    padding: 15px 0 30px;
     margin-right: auto;
     margin-left: auto;
-    width: 50%;
+    width: 74%;
+    height: 115px;
+    padding: 25px 0 23px 0;
+
 }
 
 .stay-connected-container h6 {
@@ -19,6 +20,8 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 72%;
+    box-sizing: border-box;
+    font-family: Helvetica;
 }
 
 .stay-connected-container button {
@@ -31,4 +34,19 @@
     height: 55px;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
+    font-family: 'Helvetica';
+    width: 20%;
+    margin-left: -3px;
+}
+
+.stay-connected-wrapper {
+    width: 67%;
+    padding: 1.5%;
+}
+
+.email-form {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
 }
