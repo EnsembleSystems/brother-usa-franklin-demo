@@ -3,11 +3,12 @@
     text-align: center;
     padding: 25px 0 30px;
     color: var(--white);
-    height: 55px;
+    height: 63px;
+    font-size: 15px;
 }
 
 .footer-global-wrapper {
-    padding-left: 3.5%;
+    padding-left: 3.35%;
 }
 
 .footer-global-wrapper ul {
@@ -22,5 +23,5 @@
 
 .footer-global-wrapper p {
     padding-top: 0.5%;
-    margin-right: 32px;
+    margin-right: 30px;
 }
