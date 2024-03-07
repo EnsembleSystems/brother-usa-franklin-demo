@@ -1,6 +1,33 @@
+/* stylelint-disable media-feature-range-notation */
 .footer {
     position: absolute;
     margin-top: 110px;
     width: 100%;
     background: var(--light-blue);
+}
+
+@media (min-width: 768px) {
+    .footer-content-container, .stay-connected-container, .footer-global{
+     width: 750px;
+     margin-left: auto;
+     margin-right: auto;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .footer-content-container, .stay-connected-container, .footer-global{
+     width: 970px;
+     margin-left: auto;
+     margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-content-container, .stay-connected-container, .footer-global{
+     width: 1170px;
+     margin-left: auto;
+     margin-right: auto;
+    }
 }

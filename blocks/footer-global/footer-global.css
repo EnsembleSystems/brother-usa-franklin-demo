@@ -5,16 +5,10 @@
   color: var(--white);
 }
 
-.footer-global {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20%;
-  margin-right: 20%;
-}
 
 .footer-global-wrapper ul {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-global-wrapper li {
