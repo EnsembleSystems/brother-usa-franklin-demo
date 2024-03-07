@@ -10,4 +10,41 @@
 .home-and-business-menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.home-and-business-menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-and-business-menu img {
+    margin-left: 250px;
+    height: auto;
+    width: 125px;
+}
+
+.home-link {
+    text-decoration: none;
+    background-color: #1965e1;
+    font-weight: 700;
+    color: #fff;
+    padding: 15px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px 
+}
+
+.business-link {
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.home-and-business-menu ul img {
+    height: auto;
+    width: 275px;
 }
