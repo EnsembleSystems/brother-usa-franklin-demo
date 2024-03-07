@@ -1,0 +1,13 @@
+.home-and-business {
+    /*hacky css to get things working*/
+    padding-top: 10%;
+}
+
+.home-and-business-wrapper {
+    background-color: #0d2ea0;
+}
+
+.home-and-business-menu {
+    display: flex;
+    flex-direction: row;
+}
