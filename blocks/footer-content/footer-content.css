@@ -1,7 +1,7 @@
 .footer-content-wrapper {
     padding: 25px;
-    margin-left: 11%;
-    margin-right: 10%;
+    margin-left: 10%;
+    width: 1200px;
 }
 
 .footer-content-container {
@@ -30,6 +30,7 @@
 .footer-content ul {
     margin-top: 5%;
     margin-bottom: 5%;
+    max-width: 260px;
 }
 
 .footer-content li {
@@ -40,7 +41,7 @@
 }
 
 .footer-content li picture a img {
-    max-width: 26%;
+    max-width: 30%;
     height: 40px;
 }
 
