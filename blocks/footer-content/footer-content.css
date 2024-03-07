@@ -5,7 +5,7 @@
 }
 
 .footer-content-container {
-    padding-left: 3%;
+    padding-left: 4%;
 }
 
 .footer-content {
@@ -28,8 +28,6 @@
 }
 
 .footer-content ul {
-    margin-top: 5%;
-    margin-bottom: 5%;
     max-width: 260px;
 }
 
@@ -41,7 +39,7 @@
 }
 
 .footer-content li picture a img {
-    max-width: 30%;
+    max-width: 33%;
     height: 40px;
 }
 
