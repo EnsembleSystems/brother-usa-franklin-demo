@@ -1,11 +1,10 @@
 .footer-content-wrapper {
     padding: 25px;
-    margin-left: 10%;
-    width: 1200px;
+    margin-left: 15.25%;
+    width: 1170px;
 }
 
 .footer-content-container {
-    padding-left: 4%;
     height: 555px;
 }
 
@@ -13,6 +12,10 @@
     display: flex;
     justify-content: space-around;
     color: var(--white);
+}
+
+.footer-content div{
+    margin-right: 24px;
 }
 
 .footer-content h6 {
