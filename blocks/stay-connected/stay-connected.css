@@ -1,13 +1,12 @@
 .stay-connected-wrapper {
-    margin-top: 20%;
-    padding: 1.5%;
+    /* margin-top: 20%; */
+
+    /* padding: 1.5%; */
+    /* max-width: 1140px; */
 }
 
 .stay-connected {
     background: var(--grey-shade);
-    margin-right: auto;
-    margin-left: auto;
-    width: 74%;
     height: 115px;
     padding: 2% 1% 1%;
     margin-top: -7%;
@@ -16,6 +15,8 @@
 .stay-connected-container {
     padding-left: 3%;
     padding-right: 3%;
+    margin-right: 20%;
+    margin-left: 25%;
 }
 
 .stay-connected-container h6 {

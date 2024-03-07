@@ -1,23 +1,26 @@
 .footer-global-wrapper {
-    background-color: var(--dark-blue);
-    text-align: center;
-    padding: 25px 0;
-    color: var(--white);
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 25px 0;
+  color: var(--white);
 }
 
-.footer-global-wrapper {
-    padding-left: 2%;
+.footer-global {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .footer-global-wrapper ul {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-global-wrapper li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .footer-global-wrapper p {
-    padding-top: 0.5%;
+  padding-top: 0.5%;
 }
