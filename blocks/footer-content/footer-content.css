@@ -6,6 +6,7 @@
 
 .footer-content-container {
     padding-left: 4%;
+    height: 570px;
 }
 
 .footer-content {
@@ -25,15 +26,17 @@
     color: var(--sky-blue);
     font-size: 18px;
     font-family: 'Catamaran';
+    margin-bottom: 10px;
 }
 
 .footer-content ul {
     max-width: 260px;
+    margin-bottom: 15px;
 }
 
 .footer-content li {
     list-style-type: none;
-    margin-top: 5px;
+    margin-top: 4px;
     color: var(--grey-shade);
     font-size: 16px;
 }
