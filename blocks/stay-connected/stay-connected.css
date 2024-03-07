@@ -5,9 +5,9 @@
 
 .stay-connected {
     background: var(--grey-shade);
-    margin-right: auto;
-    margin-left: auto;
-    width: 74%;
+    margin-right: 10%;
+    margin-left: 13%;
+    width: 72%;
     height: 115px;
     padding: 2% 1% 1%;
     margin-top: -7%;
@@ -32,6 +32,7 @@
     width: 42%;
     box-sizing: border-box;
     font-family: 'Helvetica';
+    font-size: 17px
 }
 
 .stay-connected-container button {
