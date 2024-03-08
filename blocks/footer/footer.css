@@ -1,1 +1,3 @@
-/* here goes footer styles */
+.footer {
+    background: var(--light-blue);
+}
