@@ -1,5 +1,10 @@
+/* Base styles for the brand menu */
 #brand-menu {
     display: none;
+}
+
+.brand li {
+    list-style-type: none;
 }
 
 .brand ul {
@@ -9,46 +14,62 @@
     box-shadow: 0 4px 2px -2px gray;
 }
 
-.brand li {
-    list-style-type: none;
+/* Styles for links */
+.brand ul>li>a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.brand ul>li>ul {
+/* Hover states */
+.brand ul>li>a:hover,
+.brand ul>li.clicked>a {
+    border-bottom: 2px solid #0d2ea0;
+    text-decoration: none;
+}
+
+.brand ul>li.clicked>ul>li>ul>li {
+    padding: 10px 20px 10px 15px;
+    transition: all .3s ease-in-out;
+}
+
+.brand ul>li.clicked>ul>li>ul>li:hover {
+    background: rgba(25, 101, 225, .8);
+    color: white;
+    border-bottom: none;
+}
+
+.brand ul>li.clicked>ul>li>ul>li>a:hover {
+    border-bottom: none;
+}
+
+/* Hide/Show functionality */
+.brand ul>li>ul,
+.brand ul>li>ul>li>ul {
     display: none;
 }
 
-.brand ul>li>a {
-    text-decoration: none;
-}
-
-.brand ul>li>a:hover {
-    border-bottom: 2px solid #0d2ea0;
-    text-decoration: none;
-}
-
-.brand ul>li.clicked > a {
-    border-bottom: 2px solid #0d2ea0;
-    text-decoration: none;
-}
-
-.brand ul > li.clicked > ul {
-    display: block;
-}
-
-.brand ul>li.clicked {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
+.brand ul>li.clicked>ul,
 .brand ul>li.clicked>ul>li>ul {
     display: block;
 }
 
+/* Flex direction changes for clicked items */
+.brand ul>li.clicked,
 .brand ul>li.clicked>ul>li {
     display: flex;
     flex-direction: column-reverse;
 }
 
-.brand ul>li>a {
-    cursor: pointer;
+.brand ul>li.clicked>ul>li {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    position: absolute;
+}
+
+.brand ul>li.clicked>ul>li>h3 {
+    font-family: 'Catamaran';
+    line-height: 20px;
+    padding: 10px 25px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    color: #020920
 }

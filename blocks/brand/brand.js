@@ -2,7 +2,7 @@ export default function decorate(block) {
     // This will select all 'li' elements that are direct children of a 'ul',
     // which is itself a direct child of another 'li'.
     const subMenuHeader = block.querySelector('ul > li > ul > li');
-    const anchor = document.createElement('h4');
+    const anchor = document.createElement('h3');
 
     // Get the text content of the current <li> element
     const text = subMenuHeader.childNodes[0].nodeValue.trim();
