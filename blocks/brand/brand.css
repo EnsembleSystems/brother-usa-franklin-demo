@@ -1,0 +1,51 @@
+#brand-menu {
+    display: none;
+}
+
+.brand ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.brand li {
+    list-style-type: none;
+}
+
+.brand ul>li>ul {
+    display: none;
+}
+
+.brand ul>li>a {
+    text-decoration: none;
+}
+
+.brand ul>li>a:hover {
+    border-bottom: 2px solid #0d2ea0;
+    text-decoration: none;
+}
+
+.brand ul>li.clicked>ul {
+    display: block;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+}
+
+.brand ul>li.clicked {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.brand ul>li.clicked>ul>li>ul {
+    display: block;
+}
+
+.brand ul>li.clicked>ul>li {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.brand ul>li>a {
+    cursor: pointer;
+}

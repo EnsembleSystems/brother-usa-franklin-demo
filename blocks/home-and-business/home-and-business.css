@@ -1,6 +1,7 @@
-.home-and-business {
+.home-and-business-container {
     /*hacky css to get things working*/
     padding-top: 10%;
+    margin-bottom: 300px;
 }
 
 .home-and-business-wrapper {
@@ -16,6 +17,7 @@
 .home-and-business-menu ul {
     display: flex;
     flex-direction: row;
+    list-style-type: none;
 }
 
 .home-and-business-menu img {
