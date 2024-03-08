@@ -1,6 +1,11 @@
 # Brother USA Demo website
 Franklin demo website for Brother USA
 
+## Pages to Migrate:
+- https://www.brother-usa.com/business
+- https://www.brother-usa.com/resources
+- https://www.brother-usa.com/home
+
 ## Environments
 - Preview: https://main--brother-usa-franklin-demo--ensemblesystems.hlx.page/
 - Live: https://main--brother-usa-franklin-demo--ensemblesystems.hlx.live/
