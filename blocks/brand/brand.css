@@ -26,10 +26,13 @@
     text-decoration: none;
 }
 
-.brand ul>li.clicked>ul {
+.brand ul>li.clicked > a {
+    border-bottom: 2px solid #0d2ea0;
+    text-decoration: none;
+}
+
+.brand ul > li.clicked > ul {
     display: block;
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, .15);
 }
 
 .brand ul>li.clicked {
