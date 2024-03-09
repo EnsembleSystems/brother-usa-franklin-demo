@@ -4,6 +4,8 @@
 
 .brand {
     box-shadow: 0 4px 2px -2px gray;
+    font-family: 'Catamaran';
+    font-size: 15px
 }
 
 .brand li {
@@ -14,8 +16,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-left: 14.5%;
-    margin-right: 22%;
+    margin-left: 13.5%;
+    margin-right: 21%;
     padding: 0.75%;
 }
 
@@ -29,7 +31,7 @@
     position: absolute;
     width: 8px;
     height: 8px;
-    top: 27%;
+    top: 12%;
     margin-left: 16px;
     margin-top: -4px;
     border-bottom: 2px solid #1965e1;
@@ -96,7 +98,6 @@
 }
 
 .brand ul>li.clicked>ul>li>h3 {
-    font-family: 'Catamaran';
     line-height: 20px;
     padding: 10px 25px 15px;
     border-bottom: 1px solid rgba(0, 0, 0, .15);
