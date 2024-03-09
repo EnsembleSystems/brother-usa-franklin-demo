@@ -1,4 +1,3 @@
-/* Base styles for the brand menu */
 #brand-menu {
     display: none;
 }
@@ -14,13 +13,29 @@
     box-shadow: 0 4px 2px -2px gray;
 }
 
-/* Styles for links */
 .brand ul>li>a {
     text-decoration: none;
     cursor: pointer;
 }
 
-/* Hover states */
+.brand ul>li.has-sub-menu>a::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 25.75%;
+    margin-left: 16px;
+    margin-top: -4px;
+    border-bottom: 2px solid #1965e1;
+    border-right: 2px solid #1965e1;
+    transform: rotate(45deg);
+    transition: all .3s ease-in-out;
+}
+
+.brand ul>li.clicked>a::after {
+    transform: rotate(-135deg);
+}
+
 .brand ul>li>a:hover,
 .brand ul>li.clicked>a {
     border-bottom: 2px solid #0d2ea0;
@@ -38,11 +53,16 @@
     border-bottom: none;
 }
 
+.brand ul>li.clicked>ul>li>ul>li:hover a::after {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
 .brand ul>li.clicked>ul>li>ul>li>a:hover {
     border-bottom: none;
 }
 
-/* Hide/Show functionality */
+
 .brand ul>li>ul,
 .brand ul>li>ul>li>ul {
     display: none;
@@ -53,7 +73,6 @@
     display: block;
 }
 
-/* Flex direction changes for clicked items */
 .brand ul>li.clicked,
 .brand ul>li.clicked>ul>li {
     display: flex;
@@ -72,4 +91,28 @@
     padding: 10px 25px 15px;
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     color: #020920
+}
+
+.sub-menu a::after {
+    display: none;
+}
+
+.has-second-sub-menu a {
+    position: relative;
+}
+
+.brand .has-second-sub-menu a::after {
+    display: block; /* 'initial' can be used as well, but 'block' will ensure it's a block-level box if needed */
+    content: ''; /* Keep the content or add content if needed */
+    position: absolute;
+    right: 5px; /* Position as needed */
+    left: 203px;
+    width: 8px;
+    height: 8px;
+    top: 50%; /* Centered vertically */
+    margin-top: -4px; /* Adjust to align the pseudo-element as needed */
+    border-bottom: 2px solid #1965e1;
+    border-right: 2px solid #1965e1;
+    transform: rotate(-45deg); /* Rotate as needed */
+    transition: all .3s ease-in-out;
 }

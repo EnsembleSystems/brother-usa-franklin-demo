@@ -5,29 +5,44 @@ export default function decorate(block) {
         const topLevelBrandMenuItems = Array.from(brandMenu.children);
 
         topLevelBrandMenuItems.forEach(topLevelBrandMenuItem => {
-            const submenu = topLevelBrandMenuItem.querySelector('ul');
-            if (submenu) {
-                const submenuItems = Array.from(submenu.children);
-                submenuItems.forEach(submenuItem => {
-                    const anchor = document.createElement('h3');
-                    const text = submenuItem.childNodes[0].nodeValue.trim();
-                    anchor.textContent = text;
-                    submenuItem.childNodes[0].nodeValue = '';
-                    submenuItem.appendChild(anchor);
-                });
-            }
-        });
-
-        topLevelBrandMenuItems.forEach(li => {
-            if (li.querySelector(':scope > a, :scope > h3')) {
-                return;
-            }
-
             const anchor = document.createElement('a');
-            const text = li.childNodes[0].nodeValue.trim();
+            const text = topLevelBrandMenuItem.childNodes[0].nodeValue.trim();
             anchor.textContent = text;
-            li.childNodes[0].nodeValue = '';
-            li.appendChild(anchor);
+            topLevelBrandMenuItem.childNodes[0].nodeValue = '';
+            topLevelBrandMenuItem.appendChild(anchor);
+            const hasSubMenu = topLevelBrandMenuItem.querySelector('ul');
+            if (hasSubMenu) {
+                topLevelBrandMenuItem.classList.add('has-sub-menu');
+            }
+
+            const subMenu = topLevelBrandMenuItem.querySelector('ul');
+            if (subMenu) {
+                subMenu.classList.add('sub-menu');
+                const subMenuHeadings = Array.from(subMenu.children);
+                console.log('submenu:', subMenu);
+                subMenuHeadings.forEach(subMenuHeading => {
+                    const heading = document.createElement('h3');
+                    const text = subMenuHeading.childNodes[0].nodeValue.trim();
+                    heading.textContent = text;
+                    subMenuHeading.childNodes[0].nodeValue = '';
+                    subMenuHeading.appendChild(heading);
+                });
+                const subMenuItems = subMenu.querySelectorAll(':scope > li > ul > li');
+                console.log('subMenuItems:', subMenuItems);
+                subMenuItems.forEach(subMenuItem => {
+                    const anchor = document.createElement('a');
+                    const text = subMenuItem.childNodes[0].nodeValue.trim();
+                    anchor.textContent = text;
+                    subMenuItem.childNodes[0].nodeValue = '';
+                    subMenuItem.appendChild(anchor);
+
+                    const hasSecondSubMenu = subMenuItem.querySelector('ul');
+                    if (hasSecondSubMenu) {
+                        subMenuItem.classList.add('has-second-sub-menu');
+                    }
+                })
+
+            }
         });
     }
 
@@ -45,6 +60,7 @@ export default function decorate(block) {
                     console.log('The clicked item has a <ul> sibling.');
                     // Toggle the class of the <li> instead of inline style
                     parentLi.classList.toggle('clicked');
+
                 } else {
                     console.log('The clicked item does not have a <ul> sibling.');
                     // Other actions...
