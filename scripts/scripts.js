@@ -14,6 +14,8 @@ import {
   loadCSS,
 } from './aem.js';
 
+import { ffetch } from './ffetch.js';
+
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
 /**
@@ -33,8 +35,55 @@ async function loadFonts() {
  * @param {Element} main The container element
  */
 // eslint-disable-next-line no-unused-vars
+
+const buildSlickSliderBlock = (main) => {
+  // Assuming ffetch has been included in your project
+  document.addEventListener('DOMContentLoaded', function () {
+    const hypertextContainer = document.getElementById('hypertext-container');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
+    // This will hold the fetched entries from the index
+    let hypertextEntries = [];
+
+    // Fetch entries from your JSON endpoint
+    async function fetchHypertexts() {
+      for await (const entry of ffetch('/path-to-your-json-index.json')) {
+        hypertextEntries.push(entry);
+      }
+      updateHypertext(); // Initially populate the hypertext
+    }
+
+    let currentIndex = 0;
+
+    function updateHypertext() {
+      hypertextContainer.innerHTML = `<a href="${hypertextEntries[currentIndex].url}">${hypertextEntries[currentIndex].text}</a>`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + hypertextEntries.length) % hypertextEntries.length;
+      updateHypertext();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % hypertextEntries.length;
+      updateHypertext();
+    });
+
+    // Auto-rotate hypertexts
+    setInterval(() => {
+      nextButton.click();
+    }, 3000); // Rotate every 3000 ms
+
+    // Initial fetch of the hypertexts data
+    fetchHypertexts();
+  });
+
+}
+
 function buildAutoBlocks(main) {
   try {
+    buildSlickSliderBlock();
     // add AutoBlocks functions here
     // example AutoBlocks function https://github.com/adobe/aem-boilerplate/blob/main/scripts/scripts.js#L22
   } catch (error) {
