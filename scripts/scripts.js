@@ -14,7 +14,7 @@ import {
   loadCSS,
 } from './aem.js';
 
-import { ffetch } from './ffetch.js';
+import ffetch from './ffetch.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
@@ -39,9 +39,9 @@ async function loadFonts() {
 const buildSlickSliderBlock = (main) => {
   // Assuming ffetch has been included in your project
   document.addEventListener('DOMContentLoaded', function () {
-    const hypertextContainer = document.getElementById('hypertext-container');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
+    const hypertextContainer = document.createElement('hypertext-container');
+    const prevButton = document.createElement('prev');
+    const nextButton = document.createElement('next');
 
     // This will hold the fetched entries from the index
     let hypertextEntries = [];
