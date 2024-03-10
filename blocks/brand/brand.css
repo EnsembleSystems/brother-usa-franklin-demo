@@ -5,7 +5,13 @@
 .brand {
     box-shadow: 0 4px 2px -2px gray;
     font-family: 'Catamaran';
-    font-size: 15px
+    font-size: 15px;
+    height: 50px;
+}
+
+.brand > div {
+    margin-left: 15%;
+    margin-right: 21%;
 }
 
 .brand li {
@@ -16,14 +22,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-left: 13.5%;
-    margin-right: 21%;
     padding: 0.75%;
 }
 
 .brand ul>li>a {
     text-decoration: none;
     cursor: pointer;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    padding-right: 30px
 }
 
 .brand ul>li.has-sub-menu>a::after {
@@ -98,10 +105,14 @@
 }
 
 .brand ul>li.clicked>ul>li>h3 {
-    line-height: 20px;
-    padding: 10px 25px 15px;
+    line-height: 45px;
+    padding: 10px 25px 1px;
     border-bottom: 1px solid rgba(0, 0, 0, .15);
-    color: #020920
+    color: #020920;
+}
+
+.sub-menu li {
+    padding-right: 3px;
 }
 
 .sub-menu a::after {
