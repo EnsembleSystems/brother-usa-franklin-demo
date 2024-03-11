@@ -16,19 +16,16 @@ function updateActiveSlide(block, slideIndex) {
         indicator.classList.toggle('active', idx === slideIndex);
     });
 
-    // Update the active slide index in the block's dataset
     block.dataset.activeSlide = slideIndex;
 }
 
 function showSlide(block, slideIndex) {
     const slides = block.querySelectorAll('.slick-slide');
-    // Normalize the slide index in case it's out of bounds
     const numSlides = slides.length;
     const normalizedIndex = (slideIndex + numSlides) % numSlides;
     updateActiveSlide(block, normalizedIndex);
 }
 
-// Uncomment and use this function when you need event handling for navigation buttons
 function bindEvents(block) {
     const prevButton = block.querySelector('.slick-prev');
     const nextButton = block.querySelector('.slick-next');
@@ -55,13 +52,11 @@ function autoRotate(block, interval = 5000) {
 }
 
 export default function decorate(block) {
-    // Add 'slick-slide' class to all '.button-container' divs
     const prevButton = document.createElement('div');
-    prevButton.classList.add('slick-prev'); // Add the appropriate class
-    // You might want to set other attributes or styles on prevButton here
+    prevButton.classList.add('slick-prev');
 
     const nextButton = document.createElement('div');
-    nextButton.classList.add('slick-next'); // Add the appropriate class
+    nextButton.classList.add('slick-next');
     const buttonContainers = block.querySelectorAll('.button-container');
     buttonContainers.forEach((div) => {
         div.classList.add('slick-slide');
@@ -69,15 +64,11 @@ export default function decorate(block) {
 
     block.insertBefore(prevButton, block.firstChild);
 
-    // Add the next button as the last child of the block
     block.appendChild(nextButton);
 
-    // Initialize the first slide as active
     updateActiveSlide(block, 0);
 
-    // Start auto-rotating slides
     autoRotate(block);
 
-    // Uncomment the following line when you're ready to use navigation buttons
     bindEvents(block);
 }

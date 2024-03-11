@@ -33,7 +33,6 @@ async function loadFonts() {
  * @param {Element} main The container element
  */
 // eslint-disable-next-line no-unused-vars
-
 function buildAutoBlocks(main) {
   try {
     // add AutoBlocks functions here
