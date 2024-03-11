@@ -9,7 +9,7 @@
     height: 50px;
 }
 
-.brand > div {
+.brand>div {
     margin-top: 0.5%;
     margin-left: 15%;
     margin-right: 21%;
@@ -37,11 +37,11 @@
 .brand ul>li.has-sub-menu>a::after {
     content: '';
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     top: 17%;
     margin-left: 16px;
-    margin-top: -4px;
+    margin-top: -3px;
     border-bottom: 2px solid #1965e1;
     border-right: 2px solid #1965e1;
     transform: rotate(45deg);
@@ -88,7 +88,7 @@
     display: block;
 }
 
-.brand .has-second-sub-menu.clicked > ul {
+.brand .has-second-sub-menu.clicked>ul {
     display: none;
 }
 
@@ -136,8 +136,8 @@
     position: absolute;
     right: 5px;
     left: 274px;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     top: 33%;
     margin-top: -4px;
     border-bottom: 2px solid #1965e1;
@@ -146,15 +146,15 @@
     transition: all .3s ease-in-out;
 }
 
-.brand .has-second-sub-menu.clicked > a {
+.brand .has-second-sub-menu.clicked>a {
     border-bottom: none;
 }
 
-.sub-menu > li:first-child {
+.sub-menu>li:first-child {
     width: 20%;
 }
 
-.brand .has-second-sub-menu > a {
+.brand .has-second-sub-menu>a {
     padding-top: 0;
     padding-bottom: 0;
 }
