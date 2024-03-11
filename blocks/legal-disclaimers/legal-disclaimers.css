@@ -1,0 +1,55 @@
+.legal-disclaimers {
+    margin-left: 250px;
+    margin-top: 10px
+}
+
+
+.collapsible-legal-disclaimer>span {
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.collapsible-legal-disclaimer>a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.collapsible-legal-disclaimer>a:hover {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.collapsible-legal-disclaimer>a>picture>img {
+    height: 35px;
+    width: 40px;
+}
+
+.collapsible-legal-disclaimer span {
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.collapsible-legal-disclaimer span::after {
+    border-top: 2px solid #ddd;
+    content: "";
+    position: absolute;
+    top: 1585px;
+    right: 0;
+    bottom: 0;
+    width: 61%;
+    z-index: -1;
+    margin-right: 250px;
+}
+
+.collapsible-legal-disclaimer>div>ul>li {
+    color: #4d4d4d;
+    margin-left: 50px;
+    margin-top: 15px;
+    list-style-type: none;
+}

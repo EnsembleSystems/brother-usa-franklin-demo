@@ -1,0 +1,11 @@
+.card {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 16px; /* Spacing between the grid items */
+  }
+  
+  .grid-item {
+    /* If you want some padding or any other styles for the grid items */
+  }
+  

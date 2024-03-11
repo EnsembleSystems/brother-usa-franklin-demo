@@ -1,0 +1,11 @@
+.product-support {
+    display: flex;
+    flex-direction: row;
+    padding: 150px;
+    border: 12px solid #f5f6f8;
+    height: 110px;
+    width: 850px;
+    margin-left: 220px;
+    margin-top: 120px;
+    align-items: center;
+}

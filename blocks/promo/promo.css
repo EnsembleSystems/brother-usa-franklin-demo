@@ -1,0 +1,19 @@
+.promo {
+    padding: 50px;
+    border: 12px solid #f5f6f8;
+    height: 110px;
+    width: 1075px;
+    margin-bottom: 125px;
+    margin-left: 260px;
+    margin-top: 350px;
+}
+
+.promo > div> div> p > picture > img {
+    position: absolute;
+    right: 450px;
+    top: 1000px;
+}
+
+.promo>div>div {
+    width: 584px;
+}

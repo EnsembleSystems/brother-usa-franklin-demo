@@ -1,0 +1,18 @@
+.bottom-columns-wrapper {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.bottom-columns {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bottom-columns>div {
+    padding: 50px;
+    border: 12px solid #f5f6f8;
+    height: 110px;
+    width: 450px;
+}
