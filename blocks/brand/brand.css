@@ -39,7 +39,7 @@
     position: absolute;
     width: 8px;
     height: 8px;
-    top: 12%;
+    top: 17%;
     margin-left: 16px;
     margin-top: -4px;
     border-bottom: 2px solid #1965e1;
@@ -88,7 +88,6 @@
     display: block;
 }
 
-/* Hide ul that is a child of .has-second-sub-menu.clicked */
 .brand .has-second-sub-menu.clicked > ul {
     display: none;
 }
