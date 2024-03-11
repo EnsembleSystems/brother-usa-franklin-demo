@@ -1,0 +1,62 @@
+main>.section {
+    /*hacky css remove when done*/
+    display: none;
+}
+
+.home-and-business-wrapper {
+    padding-top: 19px;
+    background-color: #0d2ea0;
+}
+
+.home-and-business-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1%;
+}
+
+.home-business-title {
+    margin-left: 1.65%;
+    margin-top: 0.85%;
+    font-family: 'Helvetica';
+}
+
+
+.home-and-business-menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.home-and-business-menu img {
+    margin-left: 250px;
+    height: auto;
+    width: 108px;
+    margin-bottom: 15px;
+}
+
+.home-link {
+    text-decoration: none;
+    background-color: #1965e1;
+    font-weight: 700;
+    color: #fff;
+    padding: 16px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px 
+}
+
+.business-link {
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    padding: 16px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.home-and-business-menu ul img {
+    height: auto;
+    width: 275px;
+    margin-left: 520px;
+}

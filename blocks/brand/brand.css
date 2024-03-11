@@ -1,0 +1,161 @@
+#brand-menu {
+    display: none;
+}
+
+.brand {
+    box-shadow: 0 4px 2px -2px gray;
+    font-family: 'Catamaran';
+    font-size: 15px;
+    height: 50px;
+}
+
+.brand>div {
+    margin-top: 0.5%;
+    margin-left: 15%;
+    margin-right: 21%;
+}
+
+.brand li {
+    list-style-type: none;
+}
+
+.brand ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.75%;
+}
+
+.brand ul>li>a {
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.brand ul>li.has-sub-menu>a::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 24%;
+    margin-left: 16px;
+    margin-top: -3px;
+    border-bottom: 2px solid #1965e1;
+    border-right: 2px solid #1965e1;
+    transform: rotate(45deg);
+    transition: all .3s ease-in-out;
+}
+
+.brand ul>li.clicked>a::after {
+    transform: rotate(-135deg);
+}
+
+.brand ul>li>a:hover,
+.brand ul>li.clicked>a {
+    border-bottom: 2px solid #0d2ea0;
+    text-decoration: none;
+}
+
+.brand ul>li.clicked>ul>li>ul>li {
+    padding: 10px 20px 10px 24px;
+    transition: all .3s ease-in-out;
+}
+
+.brand ul>li.clicked>ul>li>ul>li:hover {
+    background: rgba(25, 101, 225, .8);
+    color: white;
+    border-bottom: none;
+}
+
+.brand ul>li.clicked>ul>li>ul>li:hover a::after {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.brand ul>li.clicked>ul>li>ul>li>a:hover {
+    border-bottom: none;
+}
+
+.brand ul>li>ul,
+.brand ul>li>ul>li>ul {
+    display: none;
+}
+
+.brand ul>li.clicked>ul,
+.brand ul>li.clicked>ul>li>ul {
+    display: block;
+}
+
+.brand .has-second-sub-menu.clicked>ul {
+    display: none;
+}
+
+.brand ul>li.clicked,
+.brand ul>li.clicked>ul>li {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.brand ul>li.clicked>ul>li {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    position: absolute;
+}
+
+.brand ul>li.clicked>ul>li>h6 {
+    font-size: 20px;
+    line-height: 45px;
+    padding: 30px 25px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    color: #020920;
+}
+
+.sub-menu>li {
+    padding-right: 3px;
+}
+
+.sub-menu>li>ul {
+    margin-top: 15px;
+}
+
+.sub-menu a::after {
+    display: none;
+}
+
+.has-second-sub-menu a {
+    position: relative;
+    display: inline-block;
+}
+
+.brand .has-second-sub-menu a::after,
+.brand .has-second-sub-menu.clicked a::after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 5px;
+    left: 274px;
+    width: 6px;
+    height: 6px;
+    top: 33%;
+    margin-top: -4px;
+    border-bottom: 2px solid #1965e1;
+    border-right: 2px solid #1965e1;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in-out;
+}
+
+.brand .has-second-sub-menu.clicked>a {
+    border-bottom: none;
+}
+
+.sub-menu>li:first-child {
+    width: 20%;
+}
+
+.brand .has-second-sub-menu>a {
+    padding-top: 0;
+    padding-bottom: 0;
+}
