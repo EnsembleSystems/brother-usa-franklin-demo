@@ -31,7 +31,8 @@
     cursor: pointer;
     padding-bottom: 14px;
     padding-left: 12px;
-    padding-right: 30px
+    padding-right: 30px;
+    position: relative;
 }
 
 .brand ul>li.has-sub-menu>a::after {
@@ -39,7 +40,7 @@
     position: absolute;
     width: 6px;
     height: 6px;
-    top: 17%;
+    top: 24%;
     margin-left: 16px;
     margin-top: -3px;
     border-bottom: 2px solid #1965e1;
