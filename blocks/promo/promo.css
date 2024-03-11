@@ -8,10 +8,14 @@
     margin-top: 350px;
 }
 
+.promo > div> div> p > picture {
+    position: relative;
+}
+
 .promo > div> div> p > picture > img {
     position: absolute;
-    right: 450px;
-    top: 1000px;
+    left: 650px;
+    bottom: -150px;
 }
 
 .promo>div>div {

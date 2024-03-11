@@ -33,17 +33,17 @@
     padding-left: 10px;
     padding-right: 10px;
     font-weight: bold;
+    position: relative;
 }
 
 .collapsible-legal-disclaimer span::after {
     border-top: 2px solid #ddd;
     content: "";
     position: absolute;
-    top: 1585px;
-    right: 0;
-    bottom: 0;
-    width: 61%;
-    z-index: -1;
+    top: 14px;
+    left: 140px;
+    right: 250px;
+    width: 725%;
     margin-right: 250px;
 }
 
