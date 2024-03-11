@@ -1,0 +1,8 @@
+.slick-slide {
+    display: none;
+  }
+  
+  .slick-slide[aria-hidden="false"] {
+    display: block;
+  }
+  

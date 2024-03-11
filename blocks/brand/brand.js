@@ -20,7 +20,6 @@ export default function decorate(block) {
             if (subMenu) {
                 subMenu.classList.add('sub-menu');
                 const subMenuHeadings = Array.from(subMenu.children);
-                console.log('submenu:', subMenu);
                 subMenuHeadings.forEach(subMenuHeading => {
                     const heading = document.createElement('h6');
                     const text = subMenuHeading.childNodes[0].nodeValue.trim();
@@ -29,7 +28,6 @@ export default function decorate(block) {
                     subMenuHeading.appendChild(heading);
                 });
                 const subMenuItems = subMenu.querySelectorAll(':scope > li > ul > li');
-                console.log('subMenuItems:', subMenuItems);
                 subMenuItems.forEach(subMenuItem => {
                     const anchor = document.createElement('a');
                     const text = subMenuItem.childNodes[0].nodeValue.trim();
