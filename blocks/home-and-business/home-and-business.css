@@ -1,9 +1,3 @@
-.home-and-business-container {
-    /*hacky css to get things working. remove when done*/
-    padding-top: 0%;
-    margin-bottom: 300px;
-}
-
 main>.section {
     /*hacky css remove when done*/
     display: none;
