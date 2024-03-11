@@ -61,14 +61,11 @@ export default function decorate(block) {
 
                 const parentLi = event.currentTarget.parentNode;
                 const siblingUl = Array.from(parentLi.children).find(child => child.tagName === 'UL');
-                console.log('siblingUl:', siblingUl);
                 if (siblingUl) {
                     console.log('The clicked item has a <ul> sibling.');
-                    // Toggle the class of the <li> instead of inline style
                     parentLi.classList.toggle('clicked');
 
                 } else {
-                    console.log('The clicked item does not have a <ul> sibling.');
                     // Other actions...
                 }
             });
