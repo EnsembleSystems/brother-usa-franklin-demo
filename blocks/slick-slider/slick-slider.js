@@ -27,7 +27,6 @@ function updateActiveSlide(block, slideIndex) {
   }
   
   // Uncomment and use this function when you need event handling for navigation buttons
-  /*
   function bindEvents(block) {
     const prevButton = block.querySelector('.slick-prev');
     const nextButton = block.querySelector('.slick-next');
@@ -42,7 +41,6 @@ function updateActiveSlide(block, slideIndex) {
       showSlide(block, currentSlide + 1);
     });
   }
-  */
   
   function autoRotate(block, interval = 5000) {
     let activeSlideIndex = parseInt(block.dataset.activeSlide, 10) || 0;
@@ -56,10 +54,21 @@ function updateActiveSlide(block, slideIndex) {
   
   export default function decorate(block) {
     // Add 'slick-slide' class to all '.button-container' divs
+    const prevButton = document.createElement('button');
+    prevButton.classList.add('slick-prev'); // Add the appropriate class
+    // You might want to set other attributes or styles on prevButton here
+  
+    const nextButton = document.createElement('button');
+    nextButton.classList.add('slick-next'); // Add the appropriate class
     const buttonContainers = block.querySelectorAll('.button-container');
     buttonContainers.forEach((div) => {
       div.classList.add('slick-slide');
     });
+
+    block.insertBefore(prevButton, block.firstChild);
+
+    // Add the next button as the last child of the block
+    block.appendChild(nextButton);
   
     // Initialize the first slide as active
     updateActiveSlide(block, 0);
@@ -68,6 +77,6 @@ function updateActiveSlide(block, slideIndex) {
     autoRotate(block);
   
     // Uncomment the following line when you're ready to use navigation buttons
-    // bindEvents(block);
+    bindEvents(block);
   }
   

@@ -1,8 +1,27 @@
+.slick-slider-wrapper {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.slick-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .slick-slide {
     display: none;
-  }
-  
-  .slick-slide[aria-hidden="false"] {
+}
+
+.slick-slide[aria-hidden="false"] {
     display: block;
-  }
-  
+}
+
+.slick-slide>a {
+    color: inherit;
+}
+
+a.button {
+    text-decoration: underline !important;
+}
