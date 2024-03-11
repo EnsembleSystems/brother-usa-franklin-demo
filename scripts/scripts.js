@@ -14,8 +14,6 @@ import {
   loadCSS,
 } from './aem.js';
 
-import ffetch from './ffetch.js';
-
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
 /**
