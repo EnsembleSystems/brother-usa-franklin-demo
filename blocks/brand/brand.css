@@ -10,6 +10,7 @@
 }
 
 .brand > div {
+    margin-top: 0.5%;
     margin-left: 15%;
     margin-right: 21%;
 }
@@ -58,7 +59,7 @@
 }
 
 .brand ul>li.clicked>ul>li>ul>li {
-    padding: 10px 20px 10px 15px;
+    padding: 10px 20px 10px 24px;
     transition: all .3s ease-in-out;
 }
 
@@ -89,7 +90,7 @@
 
 /* Hide ul that is a child of .has-second-sub-menu.clicked */
 .brand .has-second-sub-menu.clicked > ul {
-    display: none !important;
+    display: none;
 }
 
 .brand ul>li.clicked,
@@ -104,15 +105,20 @@
     position: absolute;
 }
 
-.brand ul>li.clicked>ul>li>h3 {
+.brand ul>li.clicked>ul>li>h6 {
+    font-size: 20px;
     line-height: 45px;
-    padding: 10px 25px 1px;
+    padding: 30px 25px 5px;
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     color: #020920;
 }
 
-.sub-menu li {
+.sub-menu>li {
     padding-right: 3px;
+}
+
+.sub-menu>li>ul {
+    margin-top: 15px;
 }
 
 .sub-menu a::after {
@@ -121,6 +127,7 @@
 
 .has-second-sub-menu a {
     position: relative;
+    display: inline-block;
 }
 
 .brand .has-second-sub-menu a::after,
@@ -129,10 +136,10 @@
     content: '';
     position: absolute;
     right: 5px;
-    left: 178px;
+    left: 274px;
     width: 8px;
     height: 8px;
-    top: 50%;
+    top: 33%;
     margin-top: -4px;
     border-bottom: 2px solid #1965e1;
     border-right: 2px solid #1965e1;
@@ -146,4 +153,9 @@
 
 .sub-menu > li:first-child {
     width: 20%;
+}
+
+.brand .has-second-sub-menu > a {
+    padding-top: 0;
+    padding-bottom: 0;
 }

@@ -22,7 +22,7 @@ export default function decorate(block) {
                 const subMenuHeadings = Array.from(subMenu.children);
                 console.log('submenu:', subMenu);
                 subMenuHeadings.forEach(subMenuHeading => {
-                    const heading = document.createElement('h3');
+                    const heading = document.createElement('h6');
                     const text = subMenuHeading.childNodes[0].nodeValue.trim();
                     heading.textContent = text;
                     subMenuHeading.childNodes[0].nodeValue = '';
