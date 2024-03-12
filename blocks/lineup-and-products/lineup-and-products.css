@@ -1,0 +1,149 @@
+.lineup-and-products-wrapper {
+  background-color: #f5f6f8;
+  margin-top: 30px;
+  padding-bottom: 75px;
+}
+
+.lineup-and-products-wrapper>h3 {
+  text-align: center;
+}
+
+.lineup-and-products {
+  position: relative;
+  overflow: hidden;
+  /* Hide the slides that overflow the width of the carousel */
+}
+
+.lineup-and-products-slide h6 {
+  font-size: 2rem;
+  line-height: 1.15em;
+  color: #020920;
+  font-weight: 400;
+}
+
+.lineup-and-products-slide p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px
+}
+
+.lineup-and-products-slide {
+  display: none;
+  /* Hide all slides by default */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  background-color: white;
+  margin-left: 25%;
+}
+
+.lineup-and-products-slide[aria-hidden="false"] {
+  visibility: visible;
+  display: flex;
+  /* Change to flex to enable flexbox layout */
+  justify-content: space-between;
+  /* This will put space between the description and picture */
+  align-items: flex-start;
+  /* This will center items vertically */
+  width: 58%;
+}
+
+.lineup-and-products-slide[aria-hidden="false"]>.description {
+  /* Add any specific styles for your description container here */
+  flex: 1;
+  /* This allows the description to take up as much space as possible, minus the picture */
+}
+
+.lineup-and-products-slide[aria-hidden="false"]>picture {
+  /* Style your picture element as needed */
+  /* Ensure it does not grow to push the description off the screen, you might want to set a max-width */
+  flex: 0 0 auto;
+  /* This will prevent the picture from growing and shrinking, its size will be based on its content */
+}
+
+.lineup-and-products-prev,
+.lineup-and-products-next {
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1965e1;
+  /* Button background color */
+  color: white;
+  /* Button text color */
+  border: none;
+  padding: 10px;
+  /* Button padding */
+  transition: background-color 0.3s;
+}
+
+.lineup-and-products-prev:hover,
+.lineup-and-products-next:hover {
+  background-color: #1052bd;
+  /* Darken button background on hover */
+}
+
+.lineup-and-products-prev::after,
+.lineup-and-products-next::after {
+  content: '';
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: translate(-50%, -50%);
+}
+
+.lineup-and-products-prev::after {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.lineup-and-products-next::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.lineup-and-products-slide picture {
+  width: 55%;
+}
+
+.lineup-and-products-slide img {
+  max-width: 110%;
+  height: 40%;
+  margin-left: 50px;
+}
+
+.slide-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* Adjust the gap as needed */
+}
+
+.slick-dots {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  /* Adjust the gap as needed */
+}
+
+.slick-dots li {
+  display: flex;
+}
+
+.slick-dots button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add any additional styles for the active/non-active state of the dots */
+.slick-dots button.active {
+  /* Styles for active dot */
+}
+
+.slick-dots button:not(.active) {
+  /* Styles for non-active dots */
+}

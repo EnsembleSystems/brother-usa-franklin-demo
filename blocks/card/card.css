@@ -1,11 +1,51 @@
+.card-wrapper {
+  box-sizing: border-box;
+}
+
 .card {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    gap: 16px; /* Spacing between the grid items */
-  }
-  
-  .grid-item {
-    /* If you want some padding or any other styles for the grid items */
-  }
-  
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 32px; /* Adjust the gap if needed */
+  padding: 0 120px; /* Padding on the sides of the grid */
+}
+
+.grid-item {
+  padding: 20px; /* Padding inside each grid item */
+  display: flex;
+  flex-direction: column; /* Stack the children vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+  background: #fff; /* Background color for the grid item */
+  border-radius: 4px; /* Rounded corners for the grid item */
+}
+
+.grid-item img {
+  width: auto; /* Let the width be determined by the height to maintain aspect ratio */
+  max-width: 100%; /* Ensure image is not bigger than its container */
+  height: 350px; /* Fixed height for all images */
+  object-fit: cover; /* This will cover the area, potentially cropping the image */
+  margin-bottom: 16px; /* Margin bottom for some space below the image */
+}
+
+.grid-item h6,
+.grid-item p,
+.grid-item a {
+  width: calc(100% - 40px); /* Adjusting for padding */
+  margin-left: 20px; /* Aligning the text with the content */
+  margin-bottom: 8px; /* Space between text elements */
+}
+
+.grid-item h6 {
+  font-size: 1.4rem;
+  line-height: 1.15em;
+  color: #020920;
+  font-weight: 600; /* Making the title a bit bolder */
+  margin-top: 0; /* Removing top margin for alignment */
+}
+
+.grid-item a {
+  display: block;
+  text-decoration: none;
+  color: #0000EE; /* Typically the default link color */
+  margin-top: 8px; /* Space above the link */
+}
