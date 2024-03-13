@@ -30,10 +30,10 @@
 
 .bottom-columns>div>div>p {
     color: #000;
-    font-weight: 500;
     line-height: 23px;
-    font-size: 17px;
+    font-size: 16px;
     margin-top: 5px;
+    font-family: Helvetica-light;
 }
 
 .bottom-columns>div>div>p a {

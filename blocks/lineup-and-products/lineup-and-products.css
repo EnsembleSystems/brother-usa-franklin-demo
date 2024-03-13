@@ -27,6 +27,7 @@
   line-height: 1.15em;
   color: #020920;
   font-weight: 400;
+  font-family: Catamaran;
   margin-top: 15px;
 }
 
@@ -35,9 +36,12 @@
   line-height: 24px;
   margin-bottom: 20px;
   margin-top: 15px;
+  font-family: Helvetica-light;
 }
 .lineup-and-products-slide a {
   color: #1965e1;
+  margin-left: -20px;
+  font-family: Helvetica-light;
 }
 
 .lineup-and-products-slide {
@@ -99,7 +103,7 @@
 .lineup-and-products-slide img {
   max-width: 110%;
   height: 40%;
-  margin-left: 50px;
+  margin-left: 45px;
 }
 
 .slide-nav {
