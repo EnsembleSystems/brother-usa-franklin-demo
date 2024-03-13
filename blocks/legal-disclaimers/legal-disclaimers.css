@@ -1,6 +1,6 @@
 .legal-disclaimers {
     margin-left: 250px;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 
@@ -34,22 +34,23 @@
     padding-right: 10px;
     font-weight: bold;
     position: relative;
+    font-family: 'Helvetica';
+    font-size: 18px;
 }
 
 .collapsible-legal-disclaimer span::after {
     border-top: 2px solid #ddd;
     content: "";
     position: absolute;
-    top: 14px;
-    left: 140px;
-    right: 250px;
-    width: 725%;
-    margin-right: 250px;
+    top: 16px;
+    left: 175px;
+    width: 565%;
 }
 
 .collapsible-legal-disclaimer>div>ul>li {
     color: #4d4d4d;
     margin-left: 50px;
-    margin-top: 15px;
+    margin-top: 12px;
     list-style-type: none;
+    font-size: 13px;
 }

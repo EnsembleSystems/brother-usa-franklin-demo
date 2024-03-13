@@ -6,11 +6,20 @@
 
 .lineup-and-products-wrapper>h3 {
   text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.1em;
+  color: #020920;
+  font-weight: 400;
+  font-family: 'Catamaran';
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .lineup-and-products {
   position: relative;
   overflow: hidden;
+  width: 108%;
+  height: 30%px;
   /* Hide the slides that overflow the width of the carousel */
 }
 
@@ -19,12 +28,14 @@
   line-height: 1.15em;
   color: #020920;
   font-weight: 400;
+  margin-top: 15px;
 }
 
 .lineup-and-products-slide p {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .lineup-and-products-slide {
@@ -34,7 +45,10 @@
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   background-color: white;
-  margin-left: 25%;
+  margin-left: 13%;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  padding-right: 105px;
 }
 
 .lineup-and-products-slide[aria-hidden="false"] {
@@ -64,7 +78,6 @@
 .lineup-and-products-prev,
 .lineup-and-products-next {
   cursor: pointer;
-  top: 50%;
   transform: translateY(-50%);
   background-color: #1965e1;
   /* Button background color */
@@ -117,6 +130,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-right: 200px;
   /* Adjust the gap as needed */
 }
 

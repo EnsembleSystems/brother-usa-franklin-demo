@@ -13,6 +13,29 @@
 .bottom-columns>div {
     padding: 50px;
     border: 12px solid #f5f6f8;
-    height: 110px;
+    height: 130px;
     width: 450px;
+}
+
+.bottom-columns>div>div {
+    margin-top: -25px;
+}
+
+.bottom-columns>div>div>h6 {
+    font-size: 26px;
+    font-family: 'Catamaran';
+    color: #020920;
+    font-weight: bold;
+}
+
+.bottom-columns>div>div>p {
+    color: #000;
+    font-weight: 500;
+    line-height: 23px;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.bottom-columns>div>div>p a {
+    margin-top: 20px;
 }

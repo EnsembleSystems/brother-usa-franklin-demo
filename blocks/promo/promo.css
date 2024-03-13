@@ -1,21 +1,37 @@
 .promo {
     padding: 50px;
     border: 12px solid #f5f6f8;
-    height: 110px;
-    width: 1075px;
+    height: 150px;
+    width: 1065px;
     margin-bottom: 125px;
     margin-left: 260px;
     margin-top: 50px;
 }
 
-.promo > div> div> p > picture {
+.promo>div>div>h6 {
+    font-size: 1.8rem;
+    line-height: 28px;
+    color: #020920;
+    font-weight: 400;
+    font-family: 'Catamaran';
+}
+
+.promo>div>div>p {
+    margin-top: 10px;
+    color: #4d4d4d;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.promo>div>div>p>picture {
     position: relative;
 }
 
-.promo > div> div> p > picture > img {
+.promo>div>div>p>picture>img {
     position: absolute;
     left: 650px;
-    bottom: -150px;
+    bottom: -100px;
 }
 
 .promo>div>div {

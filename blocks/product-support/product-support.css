@@ -4,8 +4,23 @@
     padding: 150px;
     border: 12px solid #f5f6f8;
     height: 110px;
-    width: 850px;
-    margin-left: 220px;
-    margin-top: 40px;
+    width: 865px;
+    margin-left: 260px;
+    margin-top: 20px;
     align-items: center;
+}
+
+.product-support > div >div >h6{
+    font-size: 1.8rem;
+    line-height: 28px;
+    color: #020920;
+    font-weight: 400;
+    font-family: 'Catamaran';
+}
+
+.product-support > div >div >p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 15px;
 }

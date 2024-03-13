@@ -24,7 +24,8 @@
     line-height: 1.1em;
     font-weight: 400;
     background: rgba(255, 255, 255, .8);
-    padding: 20px;
+    padding: 30px;
+    width: 450px;
   }
   
   /* Style for the p tag within .make-business-move-container, position it over the image */
@@ -41,5 +42,9 @@
     margin-bottom: 20px;
     margin-top: 350px;
     background: rgba(255, 255, 255, .8);
+    width: 490px;
+    padding-top: 4px;
+    padding-right: 20px;
+
   }
   
