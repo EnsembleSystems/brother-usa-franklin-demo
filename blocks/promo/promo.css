@@ -3,9 +3,9 @@
     border: 12px solid #f5f6f8;
     height: 150px;
     width: 1065px;
-    margin-bottom: 125px;
+    margin-bottom: 100px;
     margin-left: 260px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .promo>div>div>h6 {
@@ -30,8 +30,8 @@
 
 .promo>div>div>p>picture>img {
     position: absolute;
-    left: 650px;
-    bottom: -100px;
+    left: 620px;
+    bottom: -145px;
 }
 
 .promo>div>div {
