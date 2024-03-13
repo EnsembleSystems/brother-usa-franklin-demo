@@ -1,10 +1,8 @@
 .make-business-move {
-  margin-top: 160px;
+  margin-top: 150px;
 }
 
 .make-business-move>div>div>picture>img {
-  /* width: 105vw;
-  height: 67vh; */
   width: 1750px;
 }
 
