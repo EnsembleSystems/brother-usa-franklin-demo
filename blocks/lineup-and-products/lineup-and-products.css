@@ -36,6 +36,9 @@
   margin-bottom: 20px;
   margin-top: 15px;
 }
+.lineup-and-products-slide a {
+  color: #1965e1;
+}
 
 .lineup-and-products-slide {
   display: none;

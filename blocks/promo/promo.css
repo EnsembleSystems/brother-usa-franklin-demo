@@ -37,3 +37,7 @@
 .promo>div>div {
     width: 584px;
 }
+
+.promo > div > div > p.button-container > a {
+    color: #1965e1;
+}

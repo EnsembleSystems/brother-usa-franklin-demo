@@ -27,8 +27,6 @@
     left: 30px;
 }
 
-
-
 .product-support>div>div>h6 {
     font-size: 1.6rem;
     line-height: 28px;
@@ -43,6 +41,10 @@
     margin-bottom: 20px;
     margin-top: 15px;
     max-width: 500px;
+}
+
+.product-support>div>div>p>a {
+    color: #1965e1;
 }
 
 .product-support img {
