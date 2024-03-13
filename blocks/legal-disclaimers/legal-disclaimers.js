@@ -8,8 +8,6 @@ export default function decorate(block) {
 
     const linkWrapper = document.createElement('a');
     linkWrapper.appendChild(icon);
-    // Optionally set href for linkWrapper
-    // linkWrapper.href = '#';
     linkWrapper.appendChild(span);
 
     legalDisclaimerHeading.parentNode.insertBefore(linkWrapper, legalDisclaimerHeading);

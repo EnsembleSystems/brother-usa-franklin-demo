@@ -1,5 +1,4 @@
 function updateActiveSlide(block, slideIndex) {
-    // Insert the h6 tag before the .lineup-and-products.block element
     const slides = block.querySelectorAll('.lineup-and-products-slide');
 
     const dots = block.querySelectorAll('.slick-dots button');
@@ -13,7 +12,7 @@ function updateActiveSlide(block, slideIndex) {
 
     slides.forEach((slide, idx) => {
         const isVisible = idx === slideIndex;
-        slide.style.display = isVisible ? 'flex' : 'none'; // Adjust display property here
+        slide.style.display = isVisible ? 'flex' : 'none';
         slide.style.opacity = isVisible ? '1' : '0';
         slide.setAttribute('aria-hidden', !isVisible);
         slide.querySelectorAll('button').forEach((button) => {
@@ -23,7 +22,6 @@ function updateActiveSlide(block, slideIndex) {
         const descriptionDiv = document.createElement('div');
         descriptionDiv.classList.add('description');
 
-        // Select the h6, first p tag, and a tag and append them to the description div
         const h6 = slide.querySelector('h6');
         const p = slide.querySelector('p');
         const a = slide.querySelector('a');
@@ -32,11 +30,8 @@ function updateActiveSlide(block, slideIndex) {
         descriptionDiv.appendChild(p);
         descriptionDiv.appendChild(a);
 
-
-        // Insert the description div at the start of the slide div
         slide.insertBefore(descriptionDiv, slide.firstChild);
 
-        // Now move the picture element to be a direct sibling after the description div
         const picture = slide.querySelector('picture');
         if (picture) slide.appendChild(picture);
 
@@ -79,8 +74,8 @@ function createDots(container, count, block) {
     for (let i = 0; i < count; i++) {
       let dotLi = document.createElement('li');
       let dotButton = document.createElement('button');
-      dotButton.textContent = '•'; // or any other content
-      dotButton.onclick = () => showSlide(block, i); // Add onclick event to each dot
+      dotButton.textContent = '•';
+      dotButton.onclick = () => showSlide(block, i);
       dotLi.appendChild(dotButton);
       container.appendChild(dotLi);
     }
@@ -109,8 +104,6 @@ export default function decorate(block) {
 
     const dotsUl = document.createElement('ul');
     dotsUl.classList.add('slick-dots');
-    // The dots themselves would be created and appended here based on slide count,
-    // which I'll represent with a placeholder function call
     createDots(dotsUl, block.querySelectorAll('.lineup-and-products-slide').length, block);
 
     slideNav.appendChild(prevButton);
@@ -119,8 +112,6 @@ export default function decorate(block) {
 
 
     block.appendChild(slideNav);
-
-    // block.appendChild(nextButton);
 
     updateActiveSlide(block, 0);
     bindEvents(block);
