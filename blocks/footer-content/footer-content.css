@@ -14,7 +14,7 @@
     color: var(--white);
 }
 
-.footer-content div{
+.footer-content div {
     margin-right: 24px;
 }
 
@@ -47,6 +47,11 @@
 .footer-content li picture a img {
     max-width: 33%;
     height: 40px;
+}
+
+.footer-content a, .footer-content > div > div > ul > li {
+    font-family: Helvetica-light;
+    font-size: 14.5px;
 }
 
 .footer-content li a:link,

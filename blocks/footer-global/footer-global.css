@@ -17,6 +17,12 @@
     margin-right: 50px;
 }
 
+.footer-global-wrapper li,
+.footer-global-wrapper p {
+    font-family: Helvetica-light;
+    font-size: 14px;
+}
+
 .footer-global-wrapper li {
     list-style-type: none;
 }
