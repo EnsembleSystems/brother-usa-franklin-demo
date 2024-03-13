@@ -1,50 +1,48 @@
 .make-business-move {
-    margin-top: 140px;
+  margin-top: 140px;
 }
 
-.make-business-move > div > div > picture > img {
-    width: 100vw;
-    height: 65vh;
+.make-business-move>div>div>picture>img {
+  width: 105vw;
+  height: 67vh;
 }
 
-/* This is the container that has the background image */
 .make-business-move-container {
-    position: relative; /* Set the position context for absolute positioning of child elements */
-    /* ... your other styles ... */
-  }
-  
-  /* Style for the h6 tag within .make-business-move-container, position it over the image */
-  .make-business-move-container > h6 {
-    position: absolute;
-    left: 75%;
-    margin-top: 250px;
-    transform: translate(-50%, -50%); /* Centers the element exactly where you want it */
-    color: #071956; /* Example text color for visibility */
-    font-size: 2.5rem;
-    line-height: 1.1em;
-    font-weight: 400;
-    background: rgba(255, 255, 255, .8);
-    padding: 30px;
-    width: 450px;
-  }
-  
-  /* Style for the p tag within .make-business-move-container, position it over the image */
-  .make-business-move-container > p {
-    position: absolute;
-    left: 75%; /* Center align the p tag */
-    transform: translate(-50%, -50%); /* Adjust horizontal centering */
-    color: black; /* Example text color for visibility */
-    max-width: 80%; /* You might want to constrain the width of the paragraph */
-    text-align: left; /* If you want the text centered */
-    /* ... your other styles for font size, weight, etc. ... */
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 20px;
-    margin-top: 350px;
-    background: rgba(255, 255, 255, .8);
-    width: 490px;
-    padding-top: 4px;
-    padding-right: 20px;
+  position: relative;
+}
 
-  }
-  
+.make-business-move-container>h6 {
+  position: absolute;
+  left: 67%;
+  margin-top: 190px;
+  transform: translate(-50%, -50%);
+  color: #071956;
+  font-size: 2.5rem;
+  line-height: 1.1em;
+  font-weight: 400;
+  background: rgba(255, 255, 255, .8);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 90px;
+  width: 463px;
+  font-family: 'Catamaran';
+}
+
+.make-business-move-container>p {
+  position: absolute;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  margin-top: 320px;
+  margin-left: 17px;
+  background: rgba(255, 255, 255, .8);
+  width: 490px;
+  padding-left: 62px;
+  padding-right: 61px;
+  padding-bottom: 60px;
+}

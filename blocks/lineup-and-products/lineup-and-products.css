@@ -20,7 +20,6 @@
   overflow: hidden;
   width: 108%;
   height: 30%px;
-  /* Hide the slides that overflow the width of the carousel */
 }
 
 .lineup-and-products-slide h6 {
@@ -40,7 +39,6 @@
 
 .lineup-and-products-slide {
   display: none;
-  /* Hide all slides by default */
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
@@ -54,65 +52,41 @@
 .lineup-and-products-slide[aria-hidden="false"] {
   visibility: visible;
   display: flex;
-  /* Change to flex to enable flexbox layout */
   justify-content: space-between;
-  /* This will put space between the description and picture */
   align-items: flex-start;
-  /* This will center items vertically */
   width: 58%;
 }
 
 .lineup-and-products-slide[aria-hidden="false"]>.description {
-  /* Add any specific styles for your description container here */
   flex: 1;
-  /* This allows the description to take up as much space as possible, minus the picture */
 }
 
 .lineup-and-products-slide[aria-hidden="false"]>picture {
-  /* Style your picture element as needed */
-  /* Ensure it does not grow to push the description off the screen, you might want to set a max-width */
   flex: 0 0 auto;
-  /* This will prevent the picture from growing and shrinking, its size will be based on its content */
 }
 
 .lineup-and-products-prev,
 .lineup-and-products-next {
   cursor: pointer;
-  transform: translateY(-50%);
-  background-color: #1965e1;
-  /* Button background color */
-  color: white;
-  /* Button text color */
+  color: #1965e1;
   border: none;
-  padding: 10px;
-  /* Button padding */
-  transition: background-color 0.3s;
-}
-
-.lineup-and-products-prev:hover,
-.lineup-and-products-next:hover {
-  background-color: #1052bd;
-  /* Darken button background on hover */
+  padding: 30px;
+  background: none;
 }
 
 .lineup-and-products-prev::after,
 .lineup-and-products-next::after {
-  content: '';
-  border: solid white;
   border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 3px;
-  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 
 .lineup-and-products-prev::after {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  content: "←";
 }
 
 .lineup-and-products-next::after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  content: "→";
 }
 
 .lineup-and-products-slide picture {
@@ -131,33 +105,31 @@
   align-items: center;
   gap: 10px;
   margin-right: 200px;
-  /* Adjust the gap as needed */
+  margin-top: -60px;
 }
 
 .slick-dots {
   display: flex;
-  list-style: none;
   padding: 0;
   margin: 0;
   gap: 10px;
-  /* Adjust the gap as needed */
 }
 
-.slick-dots li {
-  display: flex;
+.slick-dots > li {
+  list-style-type: none;
 }
 
 .slick-dots button {
   background: none;
-  border: none;
   cursor: pointer;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  color: #f5f6f8;
 }
 
-/* Add any additional styles for the active/non-active state of the dots */
 .slick-dots button.active {
-  /* Styles for active dot */
-}
-
-.slick-dots button:not(.active) {
-  /* Styles for non-active dots */
+  background: #000;
+  color: #000;
 }

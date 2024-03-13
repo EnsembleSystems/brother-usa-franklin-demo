@@ -30,7 +30,7 @@
     font-family: 'Catamaran';
   }
   
-  a.button {
+  .slick-slide > a.button {
     text-decoration: underline !important;
   }
   
@@ -57,7 +57,7 @@
     height: 0.75rem;
     width: 0.75rem;
   }
-  
+
   .slick-prev::after {
     transform: rotate(-135deg);
   }

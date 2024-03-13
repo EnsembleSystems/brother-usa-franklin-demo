@@ -113,6 +113,10 @@
     color: #020920;
 }
 
+.sub-menu {
+    z-index: 1;
+}
+
 .sub-menu>li {
     padding-right: 3px;
 }
