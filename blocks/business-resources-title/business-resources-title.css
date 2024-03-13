@@ -1,3 +1,29 @@
-.business-resources-title-container  {
+.business-resources-title-container {
     margin-top: 9%;
+}
+
+.business-resource-title-element {
+    margin-top: 4%;
+    margin-left: 43%;
+    margin-bottom: 10%;
+    width: 120%;
+}
+
+.business-resource-title-element > h6 {
+    color: #071956;
+    font-family: 'Catamaran';
+    font-size: 3rem !important;
+    line-height: 1.1em;
+    font-weight: 400;
+}
+
+.business-resource-title-element > p{
+    font-size: 17px !important; 
+    color: #4d4d4d;
+    line-height: 28px;
+    margin-top: 30px !important;
+}
+
+.stay-connected-container {
+    display: none;
 }
