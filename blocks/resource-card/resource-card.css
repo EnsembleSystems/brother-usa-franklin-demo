@@ -1,0 +1,74 @@
+.resource-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
+    gap: 20px;
+    /* Space between the containers */
+    padding: 20px;
+    /* Optional: space around the grid */
+}
+
+.resource-card-container {
+    /* Styles for individual containers */
+    background-color: #f5f6f8;
+    /* Example background color */
+    border: 1px solid #e0e0e0;
+    /* Example border for each container */
+    border-radius: 8px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Ensures content fits within the borders */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    display: flex;
+    /* Allows for flexible layouts within each container */
+    flex-direction: column;
+    /* Stacks child elements vertically */
+    align-items: flex-start;
+    /* Aligns children to the start of the flex container */
+    padding: 16px;
+    /* Padding within the container */
+}
+
+.resource-card-container img {
+    width: 100%;
+    /* Ensures images stretch to the container width */
+    height: auto;
+    /* Maintains the image aspect ratio */
+    margin-bottom: 16px;
+    /* Space between image and text */
+}
+
+.resource-card-container>h2,
+/* Assuming you have h2 elements for titles */
+.resource-card-container>p,
+/* Paragraphs for descriptions */
+.resource-card-container>a {
+    /* Anchor tags for links */
+    margin: 4px 0;
+    /* Vertical spacing, adjust as needed */
+    width: 100%;
+    /* Ensure they don't overflow the container */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.resource-card-container>a {
+    color: #0066cc;
+    /* Example link color */
+    text-decoration: none;
+    /* Removes underline from links */
+    padding: 8px 16px;
+    /* Padding for clickable area */
+    border-radius: 4px;
+    /* Rounded corners for links/buttons */
+    background-color: #e6f4ff;
+    /* Background color for links/buttons */
+    transition: background-color 0.3s;
+    /* Smooth background color change on hover */
+}
+
+.resource-card-container>a:hover {
+    background-color: #cce1ff;
+    /* Darker background on hover */
+}
