@@ -33,6 +33,7 @@
     padding-left: 12px;
     padding-right: 30px;
     position: relative;
+    color: inherit;
 }
 
 .brand ul>li.has-sub-menu>a::after {

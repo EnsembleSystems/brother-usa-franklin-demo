@@ -4,8 +4,11 @@ export default function decorate(block) {
     const topLevelBrandMenuItems = Array.from(brandMenu.children);
 
     const structureBrandMenu = () => {
-
         topLevelBrandMenuItems.forEach(topLevelBrandMenuItem => {
+            if (topLevelBrandMenuItem.children.length > 0 && topLevelBrandMenuItem.children[0].tagName === 'A') {
+                return;
+            }
+            
             const anchor = document.createElement('a');
             const text = topLevelBrandMenuItem.childNodes[0].nodeValue.trim();
             anchor.textContent = text;
