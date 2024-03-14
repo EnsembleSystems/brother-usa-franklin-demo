@@ -14,7 +14,6 @@ export default async function decorate(block) {
         block.appendChild(containerDiv);
     }
 
-    // Remove the original divs that are now nested inside the new resource-card-containers
     allDivs.forEach((div) => {
         if (!div.closest('.resource-card-container')) {
             resourceCard.removeChild(div);

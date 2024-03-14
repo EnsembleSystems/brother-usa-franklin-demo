@@ -1,50 +1,32 @@
 .resource-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Three columns */
-    /* Space between the containers */
     padding-left: 260px;
     padding-right: 260px;
     padding-bottom: 250px;
-    /* Optional: space around the grid */
     margin-bottom: -190px;
 }
 
 .resource-card-container {
-    /* Example border for each container */
-    /* Rounded corners */
     display: flex;
-    /* Allows for flexible layouts within each container */
     flex-direction: column;
-    /* Stacks child elements vertically */
     align-items: flex-start;
-    /* Aligns children to the start of the flex container */
     padding-bottom: 16px;
     padding-left: 16px;
     padding-right: 16px;
-    /* Padding within the container */
 }
 
 .resource-card-container img {
     width: 100%;
-    /* Ensures images stretch to the container width */
     height: auto;
-    /* Maintains the image aspect ratio */
     margin-bottom: 16px;
     margin-top: -20px;
-    /* Space between image and text */
 }
 
-/* Assuming you have h2 elements for titles */
 .resource-card-container p,
-/* Paragraphs for descriptions */
 .resource-card-container a {
-    /* Anchor tags for links */
     margin: 12px 0;
-    /* Vertical spacing, adjust as needed */
-    /* Ensure they don't overflow the container */
     text-align: left;
-    /* Align text to the left */
 }
 
 .resource-card-container h6 {
@@ -62,17 +44,11 @@
 
 .resource-card-container a {
     color: white;
-    /* Example link color */
     text-decoration: none;
     width: 100%;
-    /* Removes underline from links */
     padding: 12px 20px;
-    /* Padding for clickable area */
-    /* Rounded corners for links/buttons */
     background-color: #1965e1;
-    /* Background color for links/buttons */
     transition: background-color 0.3s;
-    /* Smooth background color change on hover */
     text-align: center;
     font-weight: bold;
 }

@@ -39,18 +39,11 @@
 
 .breadcrumbs {
     position: absolute;
-    /* Absolute position */
-    /* Align to the top of the business-resources-title */
     left: 0;
-    /* Align to the left of the business-resources-title */
     width: 100%;
-    /* Span the full width of the viewport */
     background: #f5f6f8;
-    /* Background color */
     padding: 12px 0;
-    /* Padding top and bottom, no left and right padding */
     box-sizing: border-box;
-    /* Ensure padding does not add to the width */
 }
 
 .breadcrumbs>ol {
@@ -58,11 +51,8 @@
     flex-direction: row;
     list-style-type: none;
     padding: 0;
-    /* Remove padding */
     margin: 0 auto;
-    /* Center the breadcrumbs within the page content */
     max-width: var(--page-width);
-    /* Your page max width or set a specific value */
     color: #4d4d4d;
     margin-left: 15%;
     font-family: Helvetica-light;
@@ -88,6 +78,5 @@
     width: 15%;
     background: #979797;
     position: absolute;
-    /* left: -101.5%; */
     top: 50%;
 }
