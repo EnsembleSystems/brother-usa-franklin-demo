@@ -1,15 +1,20 @@
+.business-resources-title {
+    position: relative;
+    width: 100%;
+}
+
 .business-resources-title-container {
     margin-top: 9%;
 }
 
 .business-resource-title-element {
-    margin-top: 4%;
+    margin-top: 12%;
     margin-left: 43%;
     margin-bottom: 10%;
     width: 120%;
 }
 
-.business-resource-title-element > h6 {
+.business-resource-title-element>h6 {
     color: #071956;
     font-family: 'Catamaran';
     font-size: 3rem !important;
@@ -17,8 +22,8 @@
     font-weight: 400;
 }
 
-.business-resource-title-element > p{
-    font-size: 17px !important; 
+.business-resource-title-element>p {
+    font-size: 17px !important;
     color: #4d4d4d;
     line-height: 28px;
     margin-top: 30px !important;
@@ -26,4 +31,56 @@
 
 .stay-connected-container {
     display: none;
+}
+
+.breadcrumbs {
+    position: absolute;
+    /* Absolute position */
+    /* Align to the top of the business-resources-title */
+    left: 0;
+    /* Align to the left of the business-resources-title */
+    width: 100%;
+    /* Span the full width of the viewport */
+    background: #f5f6f8;
+    /* Background color */
+    padding: 15px 0;
+    /* Padding top and bottom, no left and right padding */
+    box-sizing: border-box;
+    /* Ensure padding does not add to the width */
+}
+
+.breadcrumbs>ol {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    /* Remove padding */
+    margin: 0 auto;
+    /* Center the breadcrumbs within the page content */
+    max-width: var(--page-width);
+    /* Your page max width or set a specific value */
+    color: #4d4d4d;
+    margin-left: 15%;
+}
+
+.breadcrumbs>ol>li>a {
+    background: none;
+    text-decoration: underline;
+    color: inherit;
+}
+
+.breadcrumbs>ol>li>a:hover {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.breadcrumbs::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 15%;
+    background: #979797;
+    position: absolute;
+    /* left: -101.5%; */
+    top: 50%;
 }

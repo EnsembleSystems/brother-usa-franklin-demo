@@ -22,7 +22,7 @@ function buildBreadcrumbs(currentLocation) {
   
     // Add the current location crumb
     const liCurrent = document.createElement('li');
-    liCurrent.textContent = currentLocation;
+    liCurrent.textContent = `/  ${currentLocation}`;
     liCurrent.setAttribute('aria-current', 'page');
     ol.appendChild(liCurrent);
   
@@ -33,6 +33,14 @@ function buildBreadcrumbs(currentLocation) {
   }
   
   export default function decorate(block) {
+    // Use the location metadata or a default value for the current location
+    const titleWrapper = document.querySelector('.business-resources-title-wrapper');
+    console.log('titleWrapper:', titleWrapper);
+
+    if (getMetadata('breadcrumbs').toLowerCase() === 'true') {
+        const location = getMetadata('location'); // Replace with dynamic content if needed
+        titleWrapper.parentNode.insertBefore(buildBreadcrumbs(location), titleWrapper.nextSibling);
+    }
 
     const h6Element = block.querySelector('#business-resources');
 
@@ -41,10 +49,5 @@ function buildBreadcrumbs(currentLocation) {
 
     // Add the 'business-resource-title-container' class to the parent element
     parentElement.classList.add('business-resource-title-element');
-    // Use the location metadata or a default value for the current location
-    if (getMetadata('breadcrumbs').toLowerCase() === 'true') {
-        const location = getMetadata('location'); // Replace with dynamic content if needed
-        block.appendChild(buildBreadcrumbs(location));
-    }
   }
   
