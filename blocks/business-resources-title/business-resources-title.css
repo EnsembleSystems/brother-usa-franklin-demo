@@ -8,18 +8,21 @@
 }
 
 .business-resource-title-element {
-    margin-top: 12%;
-    margin-left: 43%;
-    margin-bottom: 10%;
-    width: 120%;
+    margin-bottom: 5%;
+}
+
+.business-resource-title-element > picture{
+    width: 1120px;
+    margin-left: 285px;
 }
 
 .business-resource-title-element>h6 {
     color: #071956;
-    font-family: 'Catamaran';
+    font-family: Catamaran;
     font-size: 3rem !important;
     line-height: 1.1em;
     font-weight: 400;
+    margin-left: 300px;
 }
 
 .business-resource-title-element>p {
@@ -27,6 +30,7 @@
     color: #4d4d4d;
     line-height: 28px;
     margin-top: 30px !important;
+    margin-left: 300px !important;
 }
 
 .stay-connected-container {
@@ -43,7 +47,7 @@
     /* Span the full width of the viewport */
     background: #f5f6f8;
     /* Background color */
-    padding: 15px 0;
+    padding: 12px 0;
     /* Padding top and bottom, no left and right padding */
     box-sizing: border-box;
     /* Ensure padding does not add to the width */
@@ -61,12 +65,15 @@
     /* Your page max width or set a specific value */
     color: #4d4d4d;
     margin-left: 15%;
+    font-family: Helvetica-light;
+    font-size: 12px;
 }
 
 .breadcrumbs>ol>li>a {
     background: none;
     text-decoration: underline;
     color: inherit;
+    padding: 4px;
 }
 
 .breadcrumbs>ol>li>a:hover {

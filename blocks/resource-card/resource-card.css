@@ -50,10 +50,12 @@
 .resource-card-container h6 {
     font-size: 1rem;
     line-height: 22px;
+    font-family: Catamaran;
 }
 
 .resource-card-container p {
-    width: 96%;
+    width: 97%;
+    font-family: Helvetica-light !important;
 }
 
 
