@@ -32,6 +32,10 @@
     margin-right: auto;
   }
 
+  .sub-menu>li:first-child {
+    width: 350px;
+  }
+
   .make-business-move-container > p {
     margin-left: 1% !important;
   }

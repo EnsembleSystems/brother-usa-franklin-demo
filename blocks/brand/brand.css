@@ -156,10 +156,6 @@
     border-bottom: none;
 }
 
-.sub-menu>li:first-child {
-    width: 20%;
-}
-
 .brand .has-second-sub-menu>a {
     padding-top: 0;
     padding-bottom: 0;
