@@ -7,10 +7,6 @@
     font-size: 15px;
 }
 
-.footer-global-wrapper {
-    /* padding-left: 3.5%; */
-}
-
 .footer-global-wrapper ul {
     display: flex;
     justify-content: space-around;
