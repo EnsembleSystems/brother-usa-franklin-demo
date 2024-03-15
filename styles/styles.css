@@ -15,6 +15,10 @@
 }
 
 @media (min-width: 1200px) {
+  .business-resources-title-container {
+    margin-top: 140px;
+  }
+
   .home-and-business-menu {
     max-width: 1140px;
     margin-left: auto;
@@ -36,7 +40,7 @@
     width: 350px;
   }
 
-  .make-business-move-container > p {
+  .make-business-move-container>p {
     margin-left: 1% !important;
   }
 
