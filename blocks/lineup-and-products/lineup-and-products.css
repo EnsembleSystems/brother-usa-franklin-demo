@@ -1,0 +1,141 @@
+.lineup-and-products-wrapper {
+  background-color: #f5f6f8;
+  margin-top: 20px;
+  padding-bottom: 45px;
+}
+
+.lineup-and-products-wrapper>h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.1em;
+  color: #020920;
+  font-weight: 400;
+  font-family: 'Catamaran';
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.lineup-and-products {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30%px;
+}
+
+.lineup-and-products-slide h6 {
+  font-size: 2rem;
+  line-height: 1.15em;
+  color: #020920;
+  font-weight: 400;
+  font-family: Catamaran;
+  margin-top: 15px;
+}
+
+.lineup-and-products-slide p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-family: Helvetica-light;
+}
+.lineup-and-products-slide a {
+  color: #1965e1;
+  margin-left: -20px;
+  font-family: Helvetica-light;
+}
+
+.lineup-and-products-slide {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  background-color: white;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  padding-right: 105px;
+}
+
+.lineup-and-products-slide[aria-hidden="false"] {
+  visibility: visible;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 58%;
+}
+
+.lineup-and-products-slide[aria-hidden="false"]>.description {
+  flex: 1;
+}
+
+.lineup-and-products-slide[aria-hidden="false"]>picture {
+  flex: 0 0 auto;
+}
+
+.lineup-and-products-prev,
+.lineup-and-products-next {
+  cursor: pointer;
+  color: #1965e1;
+  border: none;
+  padding: 30px;
+  background: none;
+}
+
+.lineup-and-products-prev::after,
+.lineup-and-products-next::after {
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.lineup-and-products-prev::after {
+  content: "←";
+}
+
+.lineup-and-products-next::after {
+  content: "→";
+}
+
+.lineup-and-products-slide picture {
+  width: 55%;
+}
+
+.lineup-and-products-slide img {
+  max-width: 109%;
+  height: 40%;
+  margin-left: 55px;
+}
+
+.slide-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 50px;
+  margin-top: -60px;
+}
+
+.slick-dots {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.slick-dots > li {
+  list-style-type: none;
+}
+
+.slick-dots button {
+  background: none;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  color: #f5f6f8;
+}
+
+.slick-dots button.active {
+  background: #000;
+  color: #000;
+}

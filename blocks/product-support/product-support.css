@@ -1,0 +1,56 @@
+.product-support {
+    flex-direction: row;
+    padding: 150px;
+    border: 12px solid #f5f6f8;
+    height: 110px;
+    width: 815px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.product-support>div>div>h6 {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+}
+
+.product-support>div>div>p {
+    position: absolute;
+    top: 110px;
+    left: 30px;
+}
+
+.product-support>div>div>.button-container {
+    position: absolute;
+    top: 180px;
+    left: 30px;
+}
+
+.product-support>div>div>h6 {
+    font-size: 1.6rem;
+    line-height: 28px;
+    color: #020920;
+    font-weight: 400;
+    font-family: 'Catamaran';
+}
+
+.product-support>div>div>p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    max-width: 500px;
+    font-family: Helvetica-light;
+}
+
+.product-support>div>div>p>a {
+    color: #1965e1;
+}
+
+.product-support img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 100%;
+}

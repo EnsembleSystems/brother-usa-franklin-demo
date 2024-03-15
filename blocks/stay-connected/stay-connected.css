@@ -1,12 +1,10 @@
 .stay-connected-wrapper {
-    margin-top: 35%;
+    margin-top: 8%;
     padding: 1.5%;
 }
 
 .stay-connected {
     background: var(--grey-shade);
-    margin-right: 10%;
-    margin-left: 13.5%;
     width: 71%;
     height: 115px;
     padding: 2% 1% 0.5%;

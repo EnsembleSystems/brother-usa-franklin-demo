@@ -1,0 +1,43 @@
+.promo {
+    padding: 50px;
+    border: 12px solid #f5f6f8;
+    height: 150px;
+    width: 1020px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.promo>div>div>h6 {
+    font-size: 1.8rem;
+    line-height: 28px;
+    color: #020920;
+    font-weight: 400;
+    font-family: 'Catamaran';
+}
+
+.promo>div>div>p {
+    margin-top: 10px;
+    color: #4d4d4d;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-family: Helvetica-light;
+}
+
+.promo>div>div>p>picture {
+    position: relative;
+}
+
+.promo>div>div>p>picture>img {
+    position: absolute;
+    left: 620px;
+    bottom: -145px;
+}
+
+.promo>div>div {
+    width: 584px;
+}
+
+.promo > div > div > p.button-container > a {
+    color: #1965e1;
+}

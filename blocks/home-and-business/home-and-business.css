@@ -1,23 +1,18 @@
-main>.section {
-    /*hacky css remove when done*/
-    display: none;
-}
-
 .home-and-business-wrapper {
     padding-top: 19px;
     background-color: #0d2ea0;
 }
 
 .home-and-business-menu {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 1%;
 }
 
 .home-business-title {
     margin-left: 1.65%;
-    margin-top: 0.85%;
+    margin-top: 0.35%;
     font-family: 'Helvetica';
 }
 
@@ -29,7 +24,6 @@ main>.section {
 }
 
 .home-and-business-menu img {
-    margin-left: 250px;
     height: auto;
     width: 108px;
     margin-bottom: 15px;
@@ -56,7 +50,9 @@ main>.section {
 }
 
 .home-and-business-menu ul img {
+    position: absolute;
+    right: -30px;
+    bottom: 0;
     height: auto;
     width: 275px;
-    margin-left: 520px;
 }
