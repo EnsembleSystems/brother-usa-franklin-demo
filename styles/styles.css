@@ -14,20 +14,16 @@
   --nav-height: 64px;
 }
 
-/* @media (min-width: 768px) {
-}
-
-
-
-@media (min-width: 992px) {
-
-} */
-
 @media (min-width: 1200px) {
   .home-and-business-menu {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .brand>div {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .brand ul {
@@ -36,10 +32,15 @@
     margin-right: auto;
   }
 
+  .make-business-move-container > p {
+    margin-left: 1% !important;
+  }
+
   .card {
     max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 0px !important;
   }
 
   .our-product {
