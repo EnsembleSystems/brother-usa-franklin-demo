@@ -104,12 +104,24 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .resource-card-wrapper {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
 
+  }
+  .business-resources-title-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .business-resource-title-element>picture {
+    max-width: 1140px;
+  }
+
+  .business-resource-title-element>p {
+    margin-bottom: 75px;
   }
 }
 

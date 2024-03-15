@@ -19,7 +19,7 @@
     margin-top: -20px;
 }
 
-.resource-card-container p,
+.resource-card-container > div > div > p,
 .resource-card-container a {
     margin: 12px 0;
     text-align: left;

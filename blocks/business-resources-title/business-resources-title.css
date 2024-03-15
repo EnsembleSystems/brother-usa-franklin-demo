@@ -3,22 +3,12 @@
     width: 100%;
 }
 
-.business-resource-title-element {
-    margin-bottom: 5%;
-}
-
-.business-resource-title-element > picture{
-    width: 1120px;
-    margin-left: 285px;
-}
-
 .business-resource-title-element>h6 {
     color: #071956;
     font-family: Catamaran;
     font-size: 3rem !important;
     line-height: 1.1em;
     font-weight: 400;
-    margin-left: 300px;
 }
 
 .business-resource-title-element>p {
@@ -26,7 +16,6 @@
     color: #4d4d4d;
     line-height: 28px;
     margin-top: 30px !important;
-    margin-left: 300px !important;
 }
 
 .stay-connected-container {
