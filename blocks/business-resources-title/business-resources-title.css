@@ -1,0 +1,67 @@
+.business-resources-title {
+    position: relative;
+    width: 100%;
+}
+
+.business-resource-title-element>h6 {
+    color: #071956;
+    font-family: Catamaran;
+    font-size: 3rem !important;
+    line-height: 1.1em;
+    font-weight: 400;
+}
+
+.business-resource-title-element>p {
+    font-size: 17px !important;
+    color: #4d4d4d;
+    line-height: 28px;
+    margin-top: 30px !important;
+}
+
+.stay-connected-container {
+    display: none;
+}
+
+.breadcrumbs {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #f5f6f8;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
+
+.breadcrumbs>ol {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: var(--page-width);
+    color: #4d4d4d;
+    margin-left: 15%;
+    font-family: Helvetica-light;
+    font-size: 12px;
+}
+
+.breadcrumbs>ol>li>a {
+    background: none;
+    text-decoration: underline;
+    color: inherit;
+    padding: 4px;
+}
+
+.breadcrumbs>ol>li>a:hover {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.breadcrumbs::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 15%;
+    background: #979797;
+    position: absolute;
+    top: 50%;
+}

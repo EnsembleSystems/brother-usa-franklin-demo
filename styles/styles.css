@@ -15,6 +15,10 @@
 }
 
 @media (min-width: 1200px) {
+  .business-resources-title-container {
+    margin-top: 140px;
+  }
+
   .home-and-business-menu {
     max-width: 1140px;
     margin-left: auto;
@@ -32,7 +36,11 @@
     margin-right: auto;
   }
 
-  .make-business-move-container > p {
+  .sub-menu>li:first-child {
+    width: 350px;
+  }
+
+  .make-business-move-container>p {
     margin-left: 1% !important;
   }
 
@@ -95,6 +103,25 @@
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .resource-card-wrapper {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .business-resources-title-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .business-resource-title-element>picture {
+    max-width: 1140px;
+  }
+
+  .business-resource-title-element>p {
+    margin-bottom: 75px;
   }
 }
 

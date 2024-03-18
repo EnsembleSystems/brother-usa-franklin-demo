@@ -1,0 +1,54 @@
+.resource-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.resource-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.resource-card-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    margin-top: -40px;
+}
+
+.resource-card-container > div > div > p,
+.resource-card-container a {
+    margin: 12px 0;
+    text-align: left;
+}
+
+.resource-card-container h6 {
+    font-size: 1rem;
+    line-height: 22px;
+    font-family: Catamaran;
+}
+
+.resource-card-container p {
+    width: 100%;
+    font-family: Helvetica-light !important;
+}
+
+
+
+.resource-card-container a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #1965e1;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-weight: bold;
+}
+
+.resource-card-container a:hover {
+    box-shadow: -1px 3px 5px grey;
+}

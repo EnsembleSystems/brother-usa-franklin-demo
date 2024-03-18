@@ -4,8 +4,11 @@ export default function decorate(block) {
     const topLevelBrandMenuItems = Array.from(brandMenu.children);
 
     const structureBrandMenu = () => {
-
         topLevelBrandMenuItems.forEach(topLevelBrandMenuItem => {
+            if (topLevelBrandMenuItem.children.length > 0 && topLevelBrandMenuItem.children[0].tagName === 'A') {
+                return;
+            }
+            
             const anchor = document.createElement('a');
             const text = topLevelBrandMenuItem.childNodes[0].nodeValue.trim();
             anchor.textContent = text;
@@ -51,7 +54,6 @@ export default function decorate(block) {
 
         allBrandItems.forEach(item => {
             item.addEventListener('click', (event) => {
-                event.preventDefault();
 
                 topLevelBrandMenuItems.forEach(topLevelBrandMenuItem => {
                     if (item !== topLevelBrandMenuItem && !topLevelBrandMenuItem.contains(item)) {
@@ -62,6 +64,7 @@ export default function decorate(block) {
                 const parentLi = event.currentTarget.parentNode;
                 const siblingUl = Array.from(parentLi.children).find(child => child.tagName === 'UL');
                 if (siblingUl) {
+                    event.preventDefault();
                     parentLi.classList.toggle('clicked');
 
                 }
