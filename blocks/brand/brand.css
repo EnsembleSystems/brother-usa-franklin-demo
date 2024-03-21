@@ -24,6 +24,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0.75%;
+    padding-top: 10px;
 }
 
 .brand ul>li>a {
@@ -98,12 +99,15 @@
 .brand ul>li.clicked>ul>li {
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
 }
 
 .brand ul>li.clicked>ul>li {
     background: #fff;
     border: 1px solid rgba(0, 0, 0, .15);
     position: absolute;
+    top: 40px;
+    left: 0;
 }
 
 .brand ul>li.clicked>ul>li>h6 {

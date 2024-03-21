@@ -3,7 +3,8 @@
 }
 
 .make-business-move>div>div>picture>img {
-  width: 1750px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .make-business-move-container {
