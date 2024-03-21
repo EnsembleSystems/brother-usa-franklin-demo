@@ -24,6 +24,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0.75%;
+    padding-top: 10px;
 }
 
 .brand ul>li>a {
